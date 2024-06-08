@@ -74,13 +74,13 @@ body{
     gap: 24px;
 }
 
-#container .palindrome .row #input{
+#container .palindrome .row #text-input{
     padding: 8px 20px;
     border-radius: 5px;
     border: 1px solid var(--gray);
 }
 
-#container .palindrome .row #button{
+#container .palindrome .row #check-btn{
     padding: 8px 20px;
     border-radius: 5px;
     border: 1px solid var(--gray);
@@ -89,7 +89,7 @@ body{
     cursor: pointer;
 }
 
-#container .palindrome .row #button:hover{
+#container .palindrome .row #check-btn:hover{
     background-color: var(--pink);
     color: var(--dark);
 }
@@ -103,3 +103,11 @@ body{
     border-radius: 10px;
 }
 
+#container .palindrome #result{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+}
