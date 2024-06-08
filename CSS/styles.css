@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+:root{
+    --dark: #17181E;
+    --blue: #849BEB;
+    --lightBlue: #C4D5FC;
+    --green: #25D952;
+    --light: #F0F0F1;
+    --gray: #6B6B7C;
+    --dimmedLight: #BBBBBB;
+    --pink: #DDC2D4;
+    --content: #1E1F27;
+    --hover-color: rgba(255, 141, 141, 0.15);
+    --green-hover: rgba(37, 217, 82, 0.49);
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: var(--dark);
+    font-family: 'Inter';
+    color: var(--light);
+}
+
+#container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+#container .text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 800px;
+}
+
+#container .text img{
+    width: 200px;
+}
+
+#container .text h1{
+    margin-top: 16px;
+    font-size: 48px;
+    background-color: var(--blue);
+    background:linear-gradient(to right, var(--green), var(--lightBlue));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#container .palindrome{
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 64px;
+}
+
+#container .palindrome .button{
+    display: flex;
+    flex-direction: row;
+}
+
+#container .palindrome .button input{
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid var(--gray);
+}
+
+#container .context{
+    font-size: 18px;
+    max-width: 400px;
+    text-align: center;
+    background-color: var(--green);
+    padding: 20px;
+    border-radius: 10px;
+}
+
