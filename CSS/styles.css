@@ -57,18 +57,41 @@ body{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-bottom: 64px;
+    margin-bottom: 32px;
+    border: 1px solid var(--gray);
+    padding: 50px;
+    border-radius: 10px;
 }
 
-#container .palindrome .button{
+#container .palindrome p{
+    font-size: 18px;
+    text-align: center;
+}
+
+#container .palindrome .row{
     display: flex;
     flex-direction: row;
+    gap: 24px;
 }
 
-#container .palindrome .button input{
-    padding: 10px;
+#container .palindrome .row #input{
+    padding: 8px 20px;
     border-radius: 5px;
     border: 1px solid var(--gray);
+}
+
+#container .palindrome .row #button{
+    padding: 8px 20px;
+    border-radius: 5px;
+    border: 1px solid var(--gray);
+    background-color: var(--blue);
+    color: var(--light);
+    cursor: pointer;
+}
+
+#container .palindrome .row #button:hover{
+    background-color: var(--pink);
+    color: var(--dark);
 }
 
 #container .context{
